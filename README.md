@@ -13,7 +13,9 @@
 <a href="https://github.com/d1pzyy/nexa/network/members"><img src="https://img.shields.io/github/forks/d1pzyy/nexa?label=forks&logo=git&logoColor=white&style=for-the-badge&labelColor=black&color=cf7700" alt="forks"/></a>
 <a href="https://github.com/d1pzyy/nexa/watchers"><img src="https://img.shields.io/github/watchers/d1pzyy/nexa?label=watchers&logo=clarifai&logoColor=white&style=for-the-badge&labelColor=cf7700&color=black" alt="watchers"/></a>
 <a href="https://github.com/d1pzyy/nexa/"><img src="https://img.shields.io/github/repo-size/d1pzyy/nexa?label=size&logo=files&logoColor=white&style=for-the-badge&labelColor=black&color=cf7700" alt="size"/></a>
-<a href="https://github.com/d1pzyy/nexa"><img src="https://img.shields.io/badge/release-v1.0.0-black?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=cf7700" alt="release"/></a>
+<!--
+<a href="https://github.com/d1pzyy/nexa"><img src="https://img.shields.io/badge/release-v-black?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=cf7700" alt="release"/></a>
+-->
 <a href="https://github.com/d1pzyy/nexa/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-gpl--3.0-cf7700?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=black" alt="license"/></a>
 </p>
 
