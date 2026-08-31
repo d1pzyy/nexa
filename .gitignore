@@ -1,0 +1,49 @@
+# dependency
+node_modules/
+
+# credentials
+.env
+.env.deployment
+.env.*.local
+*.key
+creds.json
+database/activity/*.json
+database/*.json
+database/*.db
+database/session/*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+*.log
+
+# metadata
+.idea/
+*.iml
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+.Spotlight-V100
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.gradle/
+local.properties
+*.apk
+*.aab
+Pods/
+*.xcworkspace
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# other
+database/temp/*
+NOTE.txt
