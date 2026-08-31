@@ -44,7 +44,7 @@
 		"awesome-phonenumber": "^7.8.0",
 		"file-type": "^22.0.1",
 		"jimp": "^1.6.1",
-		"pino": "^9.0.0",
+		"pino": "^10.3.1",
 		"unzipper": "^0.12.3",
 		"yt-search": "^2.13.1",
 		"ytdl-core": "npm:@distube/ytdl-core@*"
