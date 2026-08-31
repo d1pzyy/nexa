@@ -1,9 +1,3 @@
-/**
- * ua gen and scraper headers
- * Path    : scripts/engine/useragent.js
- * Author  : Dipzy <github.com/d1pzyy>
- * under GPL V3.0 License
- */
 const DESKTOP_UAS = [
 	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
 	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
@@ -23,8 +17,8 @@ export function getRandomUA(isMobile = false) {
 }
 
 /**
- * header for scraping basic web/API
- * @param {Object} customHeaders - another header (eg Authorization)
+ * header for scraping basic web/api
+ * @param {Object} customHeaders - another header
  * @param {boolean} isMobile - true for mobile ua
  * @returns {Object}
  */
@@ -46,8 +40,8 @@ export function getScraperHeaders(customHeaders = {}, isMobile = false) {
 }
 
 /**
- * header for fetch REST API/JSON
- * @param {Object} customHeaders - another header (eg Authorization)
+ * header for fetch rest api/json
+ * @param {Object} customHeaders - another header
  * @param {boolean} isMobile - true for mobile ua
  * @returns {Object}
  */
