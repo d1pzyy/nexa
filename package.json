@@ -1,0 +1,63 @@
+{
+	"name": "NEXA",
+	"version": "alpha.1",
+	"description": "WhatsApp Bot by Dipzy",
+	"author": "Dipzy",
+	"license": "GPL-3.0",
+	"homepage": "https://github.com/d1pzyy/nexa#README",
+	"bugs": {
+		"url": "https://github.com/d1pzyy/nexa/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/d1pzyy/nexa.git"
+	},
+	"funding": [
+		{
+			"type": "Telegram",
+			"url": "https://t.me/d1pzzy"
+		},
+		{
+			"type": "Saweria",
+			"url": "https://saweria.co/d1pzyy"
+		}
+	],
+	"private": true,
+	"type": "module",
+	"main": "start.js",
+	"scripts": {
+		"start": "node start.js",
+		"dev": "node --watch start.js",
+		"clean": "rm -rf database/*",
+		"update": "git pull && npm install"
+	},
+	"imports": {
+		"#database/*": "./database/*",
+		"#engine/*": "./scripts/engine/*",
+		"#library/*": "./scripts/library/*",
+		"#plugin/*": "./scripts/plugin/*",
+		"#source/*": "./source/*"
+	},
+	"dependencies": {
+		"@hapi/boom": "^10.0.1",
+		"@whiskeysockets/baileys": "7.0.0-rc14",
+		"awesome-phonenumber": "^7.8.0",
+		"file-type": "^22.0.1",
+		"jimp": "^1.6.1",
+		"pino": "^9.0.0",
+		"unzipper": "^0.12.3",
+		"yt-search": "^2.13.1",
+		"ytdl-core": "npm:@distube/ytdl-core@*"
+	},
+	"packageManager": "yarn@1.x.x",
+	"engines": {
+		"node": ">=22.0.0",
+		"npm": ">=11.0.0"
+	},
+	"overrides": {
+		"@whiskeysockets/baileys": {
+			"jimp": "^1.6.1"
+		},
+		"minimatch": "^3.1.5"
+	}
+}
