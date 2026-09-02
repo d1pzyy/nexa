@@ -3,11 +3,11 @@
  *                   Copyright (c) 2025 Naze
  *                   Licensed under MIT License
  *
- *  Modifications  : Dipzy <github.com/d1pzyy>
- *                   Copyright (c) 2026 Dipzy
+ *  Modifications  : DiP6 <github.com/d1pzyy>
+ *                   Copyright (c) 2026 DiP6
  *                   Licensed under GPL v3.0
  *
- *  Last Modified  : Aug, 31 2026
+ *  Last Modified  : Sep, 2 2026
  */
 
 import { spawn } from 'node:child_process';

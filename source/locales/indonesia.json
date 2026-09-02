@@ -1,0 +1,93 @@
+{
+	"meta": {
+		"lang": "id",
+		"name": "Bahasa Indonesia",
+		"region": "Indonesia",
+		"creator": "DiP6",
+		"license": "gpl-v3.0"
+	},
+	"currency": {
+		"name": "Rupiah",
+		"symbol": "Rp",
+		"thousand": "ribu",
+		"million": "juta",
+		"billion": "miliar",
+		"trillion": "triliun"
+	},
+	"times": {
+		"seconds": "detik",
+		"minutes": "menit",
+		"hours": "jam",
+		"days": "hari",
+		"months": "bulan",
+		"years": "tahun"
+	},
+	"days": {
+		"sunday": "Minggu",
+		"monday": "Senin",
+		"tuesday": "Selasa",
+		"wednesday": "Rabu",
+		"thursday": "Kamis",
+		"friday": "Jumat",
+		"saturday": "Sabtu"
+	},
+	"months": {
+		"january": "Januari",
+		"february": "Februari",
+		"march": "Maret",
+		"april": "April",
+		"may": "Mei",
+		"june": "Juni",
+		"july": "Juli",
+		"august": "Agustus",
+		"september": "September",
+		"october": "Oktober",
+		"november": "November",
+		"december": "Desember"
+	},
+	"greetings": {
+		"morning": "🌅 *Selamat Pagi*",
+		"afternoon": "☀️ *Selamat Siang*",
+		"evening": "🌇 *Selamat Sore*",
+		"night": "🌃 *Selamat Malam*",
+		"template": "{user}!\n\nAku *{bot}*. Asisten yang siap bantu-bantu kamu apa aja dan kapan aja.\n\n> 📝 Oh iya, kalo ada fitur yang error atau ga jalan, jangan sungkan buat lapor ke owner aku ya biar langsung dibenerin.\n\n*Semoga hari mu menyenangkan!* ✨"
+	},
+	"command": {
+		"example_usage": "⚠️ Cara pake nya bukan gitu. Nih contoh nya:\n`{example}`",
+		"did_you_mean": "❓ Eh, perintah `{input}` ga ada. Maksud kamu yang ini bukan?\n\n💬 Perintah: `{cmd}`\n📊 Kemiripan: `{similarity}`",
+		"reply_number": "Reply pesan ini pake angka yang bener ya.",
+		"unknown_input": "❌ Hmm, kayanya `{input}` ga ada deh. Coba di cek lagi ketikan nya."
+	},
+	"system": {
+		"loading": "⌛ _Bentar ya, lagi diproses..._",
+		"success": "✅ Selesai dalam `{used}`",
+		"error": "❌ Waduh, lagi ada error nih. Coba lagi nanti ya.",
+		"maintenance": "🚧 Fiturnya lagi maintenance. Belum bisa dipake dulu untuk sekarang.",
+		"owner": "👑 Eits, gaboleh! Fitur ini cuma bisa diakses sama *owner* aku aja.",
+		"private": "👤 Fitur ini cuma bisa dipake kalo kita lagi *private chat*.",
+		"group": "👥 Fitur ini cuma bisa dipake di dalam *grup* aja.",
+		"cooldown": "⚠️ Hei {user}, jangan spam dong! Sabar dulu `{cd}` baru coba lagi.",
+		"banned": "🚫 Hei {user}, kamu di banned karna *{reason}*. Gabisa pake fitur aku deh.",
+		"user_afk": "💤 {user} telah AFK. Alasan: {reason}",
+		"tag_afk": "⚠️ Jangan tag {user} karena dia lagi AFK.\nAlasan: {reason}\nSejak: {afk}",
+		"back_afk": "💤 {user} telah kembali dari AFK.\nAlasan: {reason}\nSelama: {afk}"
+	},
+	"networking": {
+		"connect": "🟢 Terhubung ke `{network}`",
+		"reconnect": "🔄 _Mencoba menyambung ulang... (Percobaan ke-{attempt})_",
+		"disconnect": "🔴 Terputus dari `{network}`",
+		"rate_limit": "⚠️ Terlalu banyak percobaan. Coba lagi dalam {cd}",
+		"timeout": "⏰ Request Timeout.",
+		"delay": "🐌 Terdeteksi delay `{delay}`",
+		"bot_info": "*INFORMASI NEXA*\n\n🌐 IP: `{ip}`\n🏳️ Negara: `{country}`\n🏙️ Kota: `{city}`\n📡 ISP: `{isp}`\n💻 OS: `{os}` ({arch})\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon : `{speed}`",
+		"bandwidth": {
+			"usage": "*PENGGUNAAN BANDWIDTH*\n\nTerpakai: `{used} / {max}`\nSisa: `{remaining}`",
+			"limit": "🚫 Limit bandwidth `{limit}` sudah tercapai."
+		},
+		"latency": {
+			"high": "⚠️ Latensi Tinggi: `{latency}`",
+			"normal": "✅ Latensi Normal: `{latency}`",
+			"low": "🔥 Latensi Rendah: `{latency}`"
+		}
+	}
+}

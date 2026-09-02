@@ -1,4 +1,4 @@
-import { getScraperHeaders } from '#library/useragent.js';
+import { getScraperHeaders } from './userAgent.js';
 import { logColor } from '#library/logger.js';
 
 export async function smartFetch(url, options = {}) {
@@ -15,7 +15,7 @@ export async function smartFetch(url, options = {}) {
 	}
 
 	if (!response.ok) {
-		throw new Error(`HTTP Status: ${response.status} - ${response.statusText}`);
+		throw new Error(`HTTP Status: \`${response.status} - ${response.statusText}\``);
 	}
 
 	return response;
