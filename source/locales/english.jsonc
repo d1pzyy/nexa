@@ -1,0 +1,55 @@
+{
+	"meta": {
+		"lang": "en",
+		"name": "English",
+		"region": ["United States", "United Kingdom", "Singapore"],
+		"creator": ["Dipzy", "Emily"],
+		"license": "gpl-v3.0"
+	},
+	"currency": {
+		"name": "Dollar",
+		"symbol": "$",
+		"thousand": "thousand",
+		"million": "million",
+		"billion": "billion",
+		"trillion": "trillion"
+	},
+	"times": {
+		"seconds": "seconds",
+		"minutes": "minutes",
+		"hours": "hours",
+		"days": "days",
+		"months": "months",
+		"years": "years"
+	},
+	"days": {
+		"sunday": "Sunday",
+		"monday": "Monday",
+		"tuesday": "Tuesday",
+		"wednesday": "Wednesday",
+		"thursday": "Thursday",
+		"friday": "Friday",
+		"saturday": "Saturday"
+	},
+	"months": {
+		"january": "January",
+		"february": "February",
+		"march": "March",
+		"april": "April",
+		"may": "May",
+		"june": "June",
+		"july": "July",
+		"august": "August",
+		"september": "September",
+		"october": "October",
+		"november": "November",
+		"december": "December"
+	},
+	"greetings": {
+		"morning": "🌅 *Good Morning*",
+		"afternoon": "☀️ *Good Afternoon*",
+		"evening": "🌇 *Good Evening*",
+		"night": "🌃 *Good Night*",
+		"template": "{user}!\n\nI'm *{bot}*. An assistant ready to meet all your needs, anytime and anywhere!\n\n> 📝 If any of my features are not working properly (error, crash, etc), don't hesitate to report it directly to my owner okay?\n\n*Hope you have a wonderful day!* ✨"
+	}
+}

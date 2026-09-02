@@ -67,7 +67,7 @@ export function flushDB() {
 	}
 
 	logColor.success(
-		`Database FLUSH ${timeNow}. Saved changes to: ${savedFiles.map(f => f + '.json').join(', ')}`
+		`FLUSH ${timeNow}. Saved changes to: ${savedFiles.map(f => f + '.json').join(', ')}`
 	);
 
 	isFlushing = false;
