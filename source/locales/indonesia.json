@@ -70,7 +70,7 @@
 		"cooldown": "⚠️ Hei {user}, jangan spam dong! Sabar dulu `{cd}` baru coba lagi.",
 		"banned": "🚫 Hei {user}, kamu di banned karna *{reason}*. Gabisa pake fitur aku deh.",
 		"user_afk": "💤 {user} telah AFK. Alasan: {reason}",
-		"tag_afk": "⚠️ Jangan tag {user} karena dia lagi AFK.\nAlasan: {reason}\nSejak: {afk}",
+		"tag_afk": "💤 Jangan tag {user} karena dia lagi AFK.\nAlasan: {reason}\nSejak: {afk}",
 		"back_afk": "💤 {user} telah kembali dari AFK.\nAlasan: {reason}\nSelama: {afk}",
 		"promote": "📢 {who} telah mengangkat {user} sebagai Admin Grup",
 		"demote": "📢 {who} telah menurunkan {user} menjadi Member",
@@ -83,7 +83,7 @@
 		"rate_limit": "⚠️ Terlalu banyak percobaan. Coba lagi dalam {cd}",
 		"timeout": "⏰ Request Timeout.",
 		"delay": "🐌 Terdeteksi delay `{delay}`",
-		"bot_info": "*INFORMASI NEXA*\n\n🌐 Server: `{server}`\n🏳️ Negara: `{country}`\n🏙️ Kota: `{city}`\n📡 ISP: `{isp}`\n💻 OS: `{os}` ({arch})\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon : `{speed}`",
+		"bot_info": "*INFORMASI NEXA*\n\n🌐 Server: `{server_name}`\n🏳️ Negara: `{country}`\n🏙️ Kota: `{city}`\n📡 ISP: `{isp}`\n💻 OS: `{os}` ({arch})\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon : `{speed}`",
 		"bandwidth": {
 			"usage": "*PENGGUNAAN BANDWIDTH*\n\nTerpakai: `{used} / {max}`\nSisa: `{remaining}`",
 			"limit": "🚫 Limit bandwidth `{limit}` sudah tercapai."

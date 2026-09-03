@@ -75,6 +75,7 @@ function start() {
 			lastCrashTime = now;
 
 			if (crashCount >= MAX_CRASH_COUNT) {
+				/* console.error('${crashCount') */
 				logColor.error(
 					`Process crashed ${crashCount} times within 1 minute. Stopping auto-restart.`
 				);
@@ -110,7 +111,6 @@ process.on('SIGINT', () => {
 	if (gcInterval) clearInterval(gcInterval);
 	if (isa) {
 		isa.kill('SIGINT');
-
 		// force exit if 5s not responding/freeze
 		const killTimeout = setTimeout(() => {
 			logColor.error('Child process unresponsive. Forcing shutdown...');
@@ -125,3 +125,4 @@ process.on('SIGINT', () => {
 		process.exit(0);
 	}
 });
+// TODO: conn.makeWASocket (index.js)
