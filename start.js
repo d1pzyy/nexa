@@ -15,7 +15,7 @@ import { join } from 'node:path';
 import { logColor } from '#library/logger.js';
 
 let isRunning = true;
-let dizzy;
+let isa; /* i miss u */
 
 function start() {
 	const args = [
@@ -23,24 +23,21 @@ function start() {
 		join(import.meta.dirname, './scripts/index.js'),
 		...process.argv.slice(2),
 	];
-
-	dizzy = spawn(process.argv[0], args, {
+	isa = spawn(process.argv[0], args, {
 		stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
 	});
-
-	dizzy.on('message', data => {
+	isa.on('message', data => {
 		if (data === 'reset') {
 			logColor.loading('Restarting process...');
-			dizzy.kill();
+			isa.kill();
 			setTimeout(start, 3000);
 		} else if (data === 'uptime') {
-			dizzy.send(process.uptime());
+			isa.send(process.uptime());
 		} else if (data === 'exit') {
 			process.exit(0);
 		}
 	});
-
-	dizzy.on('exit', code => {
+	isa.on('exit', code => {
 		if (!isRunning) {
 			logColor.success('Process stopped manually. Have a nice day <3');
 			process.exit(0);
@@ -60,7 +57,7 @@ start();
 process.on('SIGINT', () => {
 	isRunning = false;
 	logColor.warning('SIGINT received. Shutting down gracefully...');
-	if (dizzy) {
-		dizzy.kill('SIGINT');
+	if (isa) {
+		isa.kill('SIGINT');
 	}
 });
