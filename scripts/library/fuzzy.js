@@ -3,7 +3,6 @@ function getSimilarity(str1, str2) {
 	const b = str2.toLowerCase();
 	if (a === b) return 100;
 	if (a.length === 0 || b.length === 0) return 0;
-
 	const matrix = [];
 	for (let i = 0; i <= b.length; i++) matrix[i] = [i];
 	for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
@@ -20,7 +19,6 @@ function getSimilarity(str1, str2) {
 			}
 		}
 	}
-
 	const distance = matrix[b.length][a.length];
 	const maxLen = Math.max(a.length, b.length);
 	return Math.round(((maxLen - distance) / maxLen) * 100);
@@ -30,7 +28,6 @@ export function findDidYouMean(inputCmd, pluginsMap, threshold = 60) {
 	if (inputCmd.length < 2) return null;
 	let bestMatch = null;
 	let highestPercent = 0;
-
 	for (const [_, plugin] of pluginsMap) {
 		let cmds = [];
 		if (Array.isArray(plugin.command)) {
@@ -40,7 +37,6 @@ export function findDidYouMean(inputCmd, pluginsMap, threshold = 60) {
 		} else if (plugin.help) {
 			cmds = plugin.help;
 		}
-
 		for (const cmd of cmds) {
 			const percent = getSimilarity(inputCmd, cmd);
 			if (percent > highestPercent) {
@@ -49,7 +45,6 @@ export function findDidYouMean(inputCmd, pluginsMap, threshold = 60) {
 			}
 		}
 	}
-
 	if (highestPercent >= threshold) {
 		return {
 			cmdMean: bestMatch,

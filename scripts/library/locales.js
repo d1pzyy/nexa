@@ -2,23 +2,23 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { logColor } from './logger.js';
 
-const pLocales = path.join(import.meta.dirname, '../../source/locales');
+const pathLocales = path.join(import.meta.dirname, '../../source/locales');
 const fallbackLang = 'en';
 const localesData = {};
 
 function loadLocales() {
-	if (!fs.existsSync(pLocales)) {
-		logColor.error(`Can't find locales directory at: ${pLocales}`);
+	if (!fs.existsSync(pathLocales)) {
+		logColor.error(`Can't find locales directory at: ${pathLocales}`);
 		return;
 	}
 
-	const files = fs.readdirSync(pLocales);
+	const files = fs.readdirSync(pathLocales);
 	let loadedCount = 0;
 
 	for (const file of files) {
 		if (!file.endsWith('.json')) continue;
 
-		const filePath = path.join(pLocales, file);
+		const filePath = path.join(pathLocales, file);
 		try {
 			const fileContent = fs.readFileSync(filePath, 'utf-8');
 			const parsedData = JSON.parse(fileContent);
