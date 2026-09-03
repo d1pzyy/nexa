@@ -1,3 +1,7 @@
+/**
+ * time utils
+ * path : ./library/times.js
+ */
 export const getTime = (format = 'HH:mm', date = new Date()) => {
 	const d = new Date(date);
 	const formatter = new Intl.DateTimeFormat('en-US', {

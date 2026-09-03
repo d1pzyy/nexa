@@ -3,7 +3,7 @@
 		"lang": "id",
 		"name": "Bahasa Indonesia",
 		"region": "Indonesia",
-		"creator": "d6",
+		"creator": "d6.",
 		"license": "gpl-v3.0"
 	},
 	"currency": {
@@ -62,10 +62,11 @@
 		"loading": "⌛ _Bentar ya, lagi diproses..._",
 		"success": "✅ Selesai dalam `{used}`",
 		"error": "❌ Waduh, lagi ada error nih. Coba lagi nanti ya.",
-		"maintenance": "🚧 Fiturnya lagi maintenance. Belum bisa dipake dulu untuk sekarang.",
-		"owner": "👑 Eits, gaboleh! Fitur ini cuma bisa diakses sama *owner* aku aja.",
-		"private": "👤 Fitur ini cuma bisa dipake kalo kita lagi *private chat*.",
-		"group": "👥 Fitur ini cuma bisa dipake di dalam *grup* aja.",
+		"feature_maintenance": "🚧 Fiturnya lagi maintenance. Belum bisa dipake dulu untuk sekarang.",
+		"global_maintenance": "🚧 Halo {user}! Maaf ya  saat ini lagi maintenance.",
+		"owner_only": "👑 Eits, gaboleh! Fitur ini cuma bisa diakses sama *owner* aku aja.",
+		"private_only": "👤 Fitur ini cuma bisa dipake kalo kita lagi *private chat*.",
+		"group_only": "👥 Fitur ini cuma bisa dipake di dalam *grup* aja.",
 		"cooldown": "⚠️ Hei {user}, jangan spam dong! Sabar dulu `{cd}` baru coba lagi.",
 		"banned": "🚫 Hei {user}, kamu di banned karna *{reason}*. Gabisa pake fitur aku deh.",
 		"user_afk": "💤 {user} telah AFK. Alasan: {reason}",
@@ -82,7 +83,7 @@
 		"rate_limit": "⚠️ Terlalu banyak percobaan. Coba lagi dalam {cd}",
 		"timeout": "⏰ Request Timeout.",
 		"delay": "🐌 Terdeteksi delay `{delay}`",
-		"bot_info": "*INFORMASI NEXA*\n\n🌐 IP: `{ip}`\n🏳️ Negara: `{country}`\n🏙️ Kota: `{city}`\n📡 ISP: `{isp}`\n💻 OS: `{os}` ({arch})\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon : `{speed}`",
+		"bot_info": "*INFORMASI NEXA*\n\n🌐 Server: `{server}`\n🏳️ Negara: `{country}`\n🏙️ Kota: `{city}`\n📡 ISP: `{isp}`\n💻 OS: `{os}` ({arch})\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon : `{speed}`",
 		"bandwidth": {
 			"usage": "*PENGGUNAAN BANDWIDTH*\n\nTerpakai: `{used} / {max}`\nSisa: `{remaining}`",
 			"limit": "🚫 Limit bandwidth `{limit}` sudah tercapai."

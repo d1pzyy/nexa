@@ -1,3 +1,7 @@
+/**
+ * command matcher
+ * path : ./library/fuzzy.js
+ */
 function getSimilarity(str1, str2) {
 	const a = str1.toLowerCase();
 	const b = str2.toLowerCase();
