@@ -3,8 +3,8 @@
  *                   Copyright (c) 2025 Naze
  *                   Licensed under MIT License
  *
- *  Modifications  : DiP6 <github.com/d1pzyy>
- *                   Copyright (c) 2026 DiP6
+ *  Modifications  : d6 <github.com/d1pzyy>
+ *                   Copyright (c) 2026 d6
  *                   Licensed under GPL v3.0
  *
  *  Last Modified  : Sep, 2 2026
