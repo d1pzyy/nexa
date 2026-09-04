@@ -3,7 +3,7 @@
 		"lang": "en",
 		"name": "English",
 		"region": ["United States", "United Kingdom", "Singapore"],
-		"creator": "d6.",
+		"creator": ["d6.", "emily"],
 		"license": "gpl-v3.0"
 	},
 	"currency": {
@@ -20,7 +20,10 @@
 		"hours": "hours",
 		"days": "days",
 		"months": "months",
-		"years": "years"
+		"years": "years",
+		"today": "today",
+		"yesterday": "yesterday",
+		"tomorrow": "tomorrow"
 	},
 	"days": {
 		"sunday": "Sunday",
@@ -80,9 +83,41 @@
 		"unregistered": "👋 Hey! We haven't been introduced yet.\n\nType `{command}` first to sign up, and I'll unlock all features for you ✨",
 		"registered": "✅ You're Registered!\n\nWelcome to *{bot}* 🎉\nType `{command}` to view all available features."
 	},
-	"moderation": {},
-	"media": {},
-	"user": {},
-	"networking": {},
-	"other": {}
+	"moderation": {
+		"bot_not_admin": "🤖 I can't do this command because I'm not a *group admin* yet.",
+		"promote": "🚩 {who} has promoted {user} as a group admin.",
+		"demote": "🚩 {who} has demoted {user} to a member.",
+		"desc_change": "🚩 Group description changed by {who}\n\n{desc}",
+		"group_muted": "🔇 Group was closed by {who}.",
+		"group_unmuted": "🔊 Group was opened by {who}."
+	},
+	"media": {
+		"size_limit": "📦 Oops, this file is too large ({size}). My maximum limit is {limit}.",
+		"downloading": "📥 _Downloading media, hold on a sec..._",
+		"converting": "🔄 _Processing media, please wait..._"
+	},
+	"user": {
+		"limit_reached": "📉 Oops, you've reached your daily limit. Wait until `{reset}`, or upgrade to *premium* right away for unlimited access!",
+		"profile": "👤 *PROFILE*\n\n• Name: {name}\n• Age: {age}\n• Status: {status}\n• Limit: {limit}\n• Joined: {reg_dates}\n• SN: {sn_key}"
+	},
+	"networking": {
+		"connect": "🟢 Connected to `{network}`.",
+		"reconnect": "🔄 _Attempting to reconnect to {network}... (Attempt {attempt})_",
+		"disconnect": "🔴 Disconnected from `{network}`.",
+		"rate_limit": "⚠️ Too many attempts. Try again in {cd}.",
+		"timeout": "⏰ Request Timeout. Try again later.",
+		"delay": "🐌 Delay detected `{ping}ms.`",
+		"bandwidth": {
+			"usage": "📊 *BANDWIDTH USAGE*\n\nUsed: `{used} / {max}`\nRemaining: `{remaining}`",
+			"limit": "🚫 Data quota `{limit}` for this month has run out."
+		},
+		"latency": {
+			"high": "⚠️ High Latency: `{latency}`",
+			"normal": "✅ Normal Latency: `{latency}`",
+			"low": "🔥 Low Latency: `{latency}`"
+		}
+	},
+	"other": {
+		"info": "*NEXA INFORMATION*\n\n🤖 Name: `{bot}`\n⚙️ Version: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Response: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Country: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`"
+	}
 }

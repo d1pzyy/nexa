@@ -2,8 +2,8 @@
 	"meta": {
 		"lang": "id",
 		"name": "Bahasa Indonesia",
-		"region": "Indonesia",
-		"creator": "d6.",
+		"region": ["Indonesia"],
+		"creator": ["d6."],
 		"license": "gpl-v3.0"
 	},
 	"currency": {
@@ -20,7 +20,10 @@
 		"hours": "jam",
 		"days": "hari",
 		"months": "bulan",
-		"years": "tahun"
+		"years": "tahun",
+		"today": "hari ini",
+		"yesterday": "kemarin",
+		"tomorrow": "besok"
 	},
 	"days": {
 		"sunday": "Minggu",

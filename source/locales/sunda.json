@@ -1,0 +1,123 @@
+{
+	"meta": {
+		"lang": "su",
+		"name": "Basa Sunda",
+		"region": ["Indonesia"],
+		"creator": ["suheb", "d6."],
+		"license": "gpl-v3.0"
+	},
+	"currency": {
+		"name": "Rupiah",
+		"symbol": "Rp",
+		"thousand": "rébu",
+		"million": "juta",
+		"billion": "miliar",
+		"trillion": "triliun"
+	},
+	"times": {
+		"seconds": "detik",
+		"minutes": "menit",
+		"hours": "jam",
+		"days": "poé",
+		"months": "bulan",
+		"years": "taun",
+		"today": "poé ieu",
+		"yesterday": "kamari",
+		"tomorrow": "isukan"
+	},
+	"days": {
+		"sunday": "Minggu",
+		"monday": "Senén",
+		"tuesday": "Salasa",
+		"wednesday": "Rebo",
+		"thursday": "Kemis",
+		"friday": "Juma'ah",
+		"saturday": "Sabtu"
+	},
+	"months": {
+		"january": "Januari",
+		"february": "Februari",
+		"march": "Maret",
+		"april": "April",
+		"may": "Mei",
+		"june": "Juni",
+		"july": "Juli",
+		"august": "Agustus",
+		"september": "September",
+		"october": "Oktober",
+		"november": "November",
+		"december": "Desember"
+	},
+	"greetings": {
+		"morning": "🌅 *Wilujeng Enjing*",
+		"afternoon": "☀️ *Wilujeng Siang*",
+		"evening": "🌇 *Wilujeng Soré*",
+		"night": "🌃 *Wilujeng Wengi*",
+		"template": "{user}!\n\nAbi *{bot}*. Asisten anu siap mantuan anjeun naon waé sareung iraha waé.\n\n> 📝 Upami fitur abi aya anu error atawa teu jalan, ulah sangkan lapor ka owner nya méh langsung dibenerkeun.\n\n*Muga poé anjeun seneng!* ✨"
+	},
+	"command": {
+		"example_usage": "⚠️ Cara makéna sanés kitu. Ieu conto na:\n`{example}`",
+		"did_you_mean": "❓ Paréntah `{input}` henteu aya. Maksud anjeun nu ieu sanés?\n\n💬 Paréntah: `{command}`\n📊 Kamiripan: `{similarity}`",
+		"reply_number": "Bales pesen ieu maké angka nu leres nya.",
+		"unknown_input": "❌ Hmm, siga na `{input}` teu aya. Cobi anjeun cék deui ketikan na.",
+		"invalid_number": "❌ Angka `{input}` invalid."
+	},
+	"system": {
+		"loading": "⌛ _Antosan sakedap, nuju diprosés..._",
+		"success": "✅ Selesai dalam `{times}`.",
+		"error": "❌ Waduh, nuju aya error. Cobian deui engké.",
+		"feature_maintenance": "🚧 Fitur ieu nuju dina perbaikan. Mangga cobian deui engké nya.",
+		"global_maintenance": "🚧 Halo {user}, ayeuna sistem nuju maintenance heula. Sadaya fitur samentawis dinonaktipkeun.",
+		"owner_only": "👑 Fitur ieu ngan tiasa diaksés ku *owner* abi hungkul.",
+		"admin_only": "👮‍♂️ Fitur ieu ngan tiasa dipake ku *admin grup*.",
+		"private_only": "👤 Fitur ieu ngan tiasa dipake husus *private chat*.",
+		"premium_only": "🌟 Fitur ieu eksklusif kanggo user *premium*.",
+		"group_only": "👥 Fitur ieu ngan tiasa dipake di jero *grup*.",
+		"unavailable_region": "🚫 Fitur ieu ngan sadia pikeun wilayah tangtu.\n\nWilayah nu didukung: *{supported}*\nWilayah anjeun ayeuna: *{region}*",
+		"user_afk": "💤 {user} nuju AFK. Alesan: {reason}",
+		"tag_afk": "💤 Ulah tag {user} sabab manéhna nuju AFK.\nAlesan: {reason}\nTi saprak: {times} nu katukang.",
+		"back_afk": "💤 {user} atos mulih ti AFK.\nAlesan: {reason}\nSalila: {times} nu katukang.",
+		"invalid_url": "🔗 Link nu dipasih henteu valid. Cobi cek deui URL-na.",
+		"cooldown": "⚠️ Hai {user}, ulah spam atuh! Sabar heula `{cd}` nembé cobian deui.",
+		"banned": "🚫 Hai {user}, anjeun di-banned ku sabab *{reason}*. Jadi henteu tiasa nganggo fitur abi nya.",
+		"unregistered": "👋 Hai! Abi teu ningal anjeun sateu acan na.\n\nKetik `{command}` heula nya kanggo daftar. Nembe ku abi pasihan akses sadaya fitur kanggo anjeun ✨",
+		"registered": "✅ Pendaftaran Berhasil!\n\nWilujeng sumping di *{bot}* 🎉\nKetik `{command}` kanggo ningali sadaya fitur."
+	},
+	"moderation": {
+		"bot_not_admin": "🤖 Abi teu tiasa ngajalankeun paréntah ieu ku sabab teu acan jadi *admin grup*.",
+		"promote": "🚩 {who} geus ngangkat {user} salaku admin grup.",
+		"demote": "🚩 {who} geus nurunkeun {user} jadi anggota.",
+		"desc_change": "🚩 Deskripsi grup geus dirobah ku {who}\n\n{desc}",
+		"group_muted": "🔇 Grup geus ditutup ku {who}.",
+		"group_unmuted": "🔊 Grup geus dibuka ku {who}."
+	},
+	"media": {
+		"size_limit": "📦 Duh, ukuran file-na terlalu gedé ({size}). Batas maksimal abi mah mung {limit}.",
+		"downloading": "📥 _Nuju ngunduh média, antosan sakedap nya..._",
+		"converting": "🔄 _Nuju mroses média..._"
+	},
+	"user": {
+		"limit_reached": "📉 Limit poéan anjeun tos séép. Antosan dugi ka `{reset}`, atawa langsung upgrade ka *premium* supaya tiasa akses sapuasna!",
+		"profile": "👤 *PROFIL*\n\n• Ngaran: {name}\n• Umur: {age}\n• Status: {status}\n• Limit: {limit}\n• Daptar ti saprak: {reg_dates}\n• SN: {sn_key}"
+	},
+	"networking": {
+		"connect": "🟢 Nyambung ka `{network}`.",
+		"reconnect": "🔄 _Nyobi nyambung ulang ka {network}... (Percobaan ke-{attempt})_",
+		"disconnect": "🔴 Terputus ti `{network}`.",
+		"rate_limit": "⚠️ Terlalu loba percobaan. Cobi deui dina {cd}.",
+		"timeout": "⏰ Request Timeout. Cobi deui engké.",
+		"delay": "🐌 Terdeteksi delay `{ping}ms.`",
+		"bandwidth": {
+			"usage": "📊 *PENGGUNAAN BANDWIDTH*\n\nKapaké: `{used} / {max}`\nSésa: `{remaining}`",
+			"limit": "🚫 Kuota data `{limit}` bulan ieu atos séép."
+		},
+		"latency": {
+			"high": "⚠️ Latensi Tinggi: `{latency}`",
+			"normal": "✅ Latensi Normal: `{latency}`",
+			"low": "🔥 Latensi Rendah: `{latency}`"
+		}
+	},
+	"other": {
+		"info": "*INFORMASI NEXA*\n\n🤖 Ngaran: `{bot}`\n⚙️ Vérsi: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Nagara: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`"
+	}
+}
