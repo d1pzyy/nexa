@@ -3,7 +3,7 @@
 		"lang": "en",
 		"name": "English",
 		"region": ["United States", "United Kingdom", "Singapore"],
-		"creator": ["Dipzy", "Emily"],
+		"creator": "d6.",
 		"license": "gpl-v3.0"
 	},
 	"currency": {
@@ -50,6 +50,39 @@
 		"afternoon": "☀️ *Good Afternoon*",
 		"evening": "🌇 *Good Evening*",
 		"night": "🌃 *Good Night*",
-		"template": "{user}!\n\nI'm *{bot}*. An assistant ready to meet all your needs, anytime and anywhere!\n\n> 📝 If any of my features are not working properly (error, crash, etc), don't hesitate to report it directly to my owner okay?\n\n*Hope you have a wonderful day!* ✨"
-	}
+		"template": "{user}!\n\nI'm *{bot}*. An assistant ready to meet all your needs, anytime and anywhere!\n\n> 📝 If any of my features are not working properly, don't hesitate to report it directly to my owner.\n\n*Hope you have a wonderful day!* ✨"
+	},
+	"command": {
+		"example_usage": "⚠️ That's not how you use it. Here's an example:\n`{example}`",
+		"did_you_mean": "❓ Oops, command `{input}` not found. Did you mean this instead?\n\n💬 Command: `{command}`\n📊 Match: `{similarity}`",
+		"reply_number": "Reply to this message using a valid number.",
+		"unknown_input": "❌ Hmm, I can't find `{input}` anywhere. Please check your typing again.",
+		"invalid_number": "❌ `{input}` is an invalid number."
+	},
+	"system": {
+		"loading": "⌛ _Give me a sec..._",
+		"success": "✅ Completed in `{times}`.",
+		"error": "❌ Oops, something went wrong. Try again later.",
+		"feature_maintenance": "🚧 This feature is under maintenance. Try again later.",
+		"global_maintenance": "🚧 Hey {user}, the system is currently down for maintenance. All features are temporarily disabled.",
+		"owner_only": "👑 This feature is only for *my owner*.",
+		"admin_only": "👮‍♂️ Only *group admins* can use this feature.",
+		"private_only": "👤 This feature is strictly for *private chat* only.",
+		"premium_only": "🌟 This feature is exclusively for *premium* users.",
+		"group_only": "👥 This feature can only be used inside *groups*.",
+		"unavailable_region": "🚫 This feature is only available in specific regions.\n\nSupported regions: *{supported}*\nYour location: *{region}*",
+		"user_afk": "💤 {user} is now AFK. Reason: {reason}",
+		"tag_afk": "💤 Avoid tagging {user} as they are AFK.\nReason: {reason}\nSince: {times} ago.",
+		"back_afk": "💤 {user} came back from AFK.\nReason: {reason}\nDuration: {times}.",
+		"invalid_url": "🔗 Your link is invalid. Please check the URL again.",
+		"cooldown": "⚠️ Hey {user}, stop spamming! Wait `{cd}` before trying again.",
+		"banned": "🚫 Hey {user}, you've been banned because of *{reason}*. So you can't use my features.",
+		"unregistered": "👋 Hey! We haven't been introduced yet.\n\nType `{command}` first to sign up, and I'll unlock all features for you ✨",
+		"registered": "✅ You're Registered!\n\nWelcome to *{bot}* 🎉\nType `{command}` to view all available features."
+	},
+	"moderation": {},
+	"media": {},
+	"user": {},
+	"networking": {},
+	"other": {}
 }

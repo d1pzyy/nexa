@@ -1,0 +1,17 @@
+{
+	"meta": {
+		"lang": "zh-Hans",
+		"name": "简体中文",
+		"region": ["China", "Singapore", "Malaysia"],
+		"creator": ["婉婷", "d6."],
+		"license": "gpl-v3.0"
+	},
+	"currency": {
+		"name": "人民币",
+		"symbol": "¥",
+		"thousand": "千",
+		"million": "百万",
+		"billion": "十亿",
+		"trillion": "万亿"
+	}
+}
