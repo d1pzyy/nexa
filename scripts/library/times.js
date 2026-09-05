@@ -1,21 +1,25 @@
-/**
- * time utils
- * path : ./library/times.js
- */
+const timeFormatter = new Intl.DateTimeFormat('en-US', {
+	timeZone: 'Asia/Jakarta',
+	year: 'numeric',
+	month: '2-digit',
+	day: '2-digit',
+	hour: '2-digit',
+	minute: '2-digit',
+	second: '2-digit',
+	hourCycle: 'h23',
+});
+
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+	timeZone: 'Asia/Jakarta',
+	weekday: 'long',
+	day: '2-digit',
+	month: 'long',
+	year: 'numeric',
+});
+
 export const getTime = (format = 'HH:mm', date = new Date()) => {
 	const d = new Date(date);
-	const formatter = new Intl.DateTimeFormat('en-US', {
-		timeZone: 'Asia/Jakarta',
-		year: 'numeric',
-		month: '2-digit',
-		day: '2-digit',
-		hour: '2-digit',
-		minute: '2-digit',
-		second: '2-digit',
-		hourCycle: 'h23',
-	});
-
-	const parts = formatter.formatToParts(d);
+	const parts = timeFormatter.formatToParts(d);
 	const getPart = type => parts.find(p => p.type === type).value;
 	const year = getPart('year');
 	const month = getPart('month');
@@ -49,15 +53,7 @@ export const greetings = () => {
 
 export const dates = (numer = new Date()) => {
 	const d = new Date(numer);
-	const options = {
-		timeZone: 'Asia/Jakarta',
-		weekday: 'long',
-		day: '2-digit',
-		month: 'long',
-		year: 'numeric',
-	};
-
-	return new Intl.DateTimeFormat('id-ID', options).format(d);
+	return dateFormatter.format(d);
 };
 
 export const clockString = ms => {

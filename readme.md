@@ -1,8 +1,10 @@
 <div align="center">
-<img src="https://github.com/user-attachments/assets/d87b3ec8-6352-401d-a84a-71ca0d05d0b1" alt="banner" width="auto"/>
+<img src="./source/media/image/thumb/thumb_1.png" alt="banner" width="auto"/>
 <p><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=ff24c7&center=true&vCenter=true&width=435&lines=Next%2DGeneration+WhatsApp+Assistant;Powered+by+Node.js+22+LTS;Reliable+Modular+System;Multi-Language+Supported+%28i18n%29" alt="Typing SVG" /></a></p>
 <!-- desc -->
-<i>A crazy lightweight, hyper-aesthetic WhatsApp assistant engineered to handle complex automation without breaking a sweat.<br><br>Nexa is not just another bot, it’s designed to bridge the gap between seamless functionality and raw performance. From auto-reply, media tools, to smart automation, Nexa runs light on resources but hits hard on features!</i>
+<i>A crazy lightweight, hyper-aesthetic WhatsApp assistant engineered to handle complex automation without breaking a sweat.
+<br><br>
+Nexa is not just another bot, it’s designed to bridge the gap between seamless functionality and raw performance. From auto-reply, media tools, to smart automation, Nexa runs light on resources but hits hard on features!</i>
 </div>
 
 <br>

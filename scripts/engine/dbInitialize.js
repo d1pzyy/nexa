@@ -10,14 +10,15 @@ const userSchema = {
 	name: '',
 	phone: '',
 	jid: '',
-	region: '',
+	ages: 0,
+	limit: global.limit.default,
+	premium: false,
+	afk: [],
 	warning: 0,
 	banned: false,
 	firstInteraction: '',
 	lastInteraction: '',
-	lastOrder: [],
 	languageDefault: '',
-	paymentDefault: '',
 };
 
 const groupSchema = {
@@ -30,6 +31,7 @@ const groupSchema = {
 	firstInteraction: '',
 	lastInteraction: '',
 	interactedMembers: [],
+	groupSettings: [],
 };
 
 const initDatabase = () => {

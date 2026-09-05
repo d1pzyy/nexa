@@ -14,10 +14,8 @@ function loadLocales() {
 
 	const files = fs.readdirSync(pathLocales);
 	let loadedCount = 0;
-
 	for (const file of files) {
 		if (!file.endsWith('.json')) continue;
-
 		const filePath = path.join(pathLocales, file);
 		try {
 			const fileContent = fs.readFileSync(filePath, 'utf-8');
@@ -44,6 +42,15 @@ function loadLocales() {
 
 loadLocales();
 
+if (fs.existsSync(pathLocales)) {
+	fs.watch(pathLocales, (eventType, filename) => {
+		if (filename && filename.endsWith('.json')) {
+			logColor.info(`File ${filename} changed. Reloading locales...`);
+			loadLocales();
+		}
+	});
+}
+
 export function getLangData(langCode) {
 	return localesData[langCode] || localesData[fallbackLang] || {};
 }
@@ -52,7 +59,6 @@ export function t(langCode, keyPath, variables = {}) {
 	const langObj = getLangData(langCode);
 	const keys = keyPath.split('.');
 	let text = langObj;
-
 	for (const key of keys) {
 		if (text?.[key] !== undefined) {
 			text = text[key];
@@ -66,8 +72,16 @@ export function t(langCode, keyPath, variables = {}) {
 		return t(fallbackLang, keyPath, variables);
 	}
 
-	if (typeof text !== 'string') {
-		return `Missing: \`${keyPath}\`!`;
+	if (text === undefined) {
+		logColor.error(`Missing translation key: ${keyPath} for language ${langCode}`);
+		return `Missing translation key: \`${keyPath}\` for language \`${langCode}\``;
+	}
+
+	if (Array.isArray(text)) {
+		text = text.join(', ');
+	} else if (typeof text !== 'string') {
+		logColor.error(`Translation key ${keyPath} is not a string or array.`);
+		return `Translation key \`${keyPath}\` is not a string or array.`;
 	}
 
 	if (Object.keys(variables).length > 0) {

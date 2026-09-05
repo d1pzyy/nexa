@@ -20,7 +20,6 @@ export async function loadPlugins() {
 	for (const file of files) {
 		const filePath = join(pluginDir, file);
 		const pluginKey = file.replace(/\\/g, '/');
-
 		try {
 			const fileUrl = `file://${filePath}?v=${Date.now()}`;
 			const module = await import(fileUrl);

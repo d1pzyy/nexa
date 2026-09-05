@@ -181,7 +181,7 @@ export function autoCleanDatabase() {
 		for (const id of Object.keys(db)) {
 			const data = db[id];
 			if (data.lastInteraction) {
-				const cleanDateStr = data.lastInteraction.replace(/-(\d{2}:\d{2}[AP]M)$/, ' $1');
+				const cleanDateStr = data.lastInteraction;
 				const lastTime = new Date(cleanDateStr).getTime();
 				if (!isNaN(lastTime) && now - lastTime > monthMS) {
 					delete db[id];

@@ -3,7 +3,7 @@
 		"lang": "su",
 		"name": "Basa Sunda",
 		"region": ["Indonesia"],
-		"creator": ["suheb", "d6."],
+		"creator": ["d6."],
 		"license": "gpl-v3.0"
 	},
 	"currency": {
@@ -118,6 +118,9 @@
 		}
 	},
 	"other": {
-		"info": "*INFORMASI NEXA*\n\n🤖 Ngaran: `{bot}`\n⚙️ Vérsi: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Nagara: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`"
+		"info": "*INFORMASI NEXA*\n\n🤖 Ngaran: `{bot}`\n⚙️ Versi: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Nagara: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`",
+		"self_mode": "💤 Nexa nuju dina mode *self*. Sadayana fitur, paréntah, sareung pesan teu bakalan di waler. Cobian deui ngkin nya.",
+		"global_help": "📖 *Panduan Penggunaan Nexa*\n\nIeu daftar paréntah nu tiasa anjeun paké kanggo ngamaksimalkeun pangalaman sareung Nexa.\n\n📝 *Paréntah Biasa*\n`/register` — Daftarkeun profil anjeun kanggo pertama kali supados tiasa akses sadaya fitur Nexa.\n`/menu` — Nampilkeun daftar lengkap sadaya menu, fitur interaktif, sareung kategori nu aya.\n`/help` — Ngabuka halaman pusat bantuan ieu kanggo mandu penggunaan.\n`/ping` — Cek kecepatan respon sareung mastikeun Nexa nuju online.\n`/status` — Kanggo ningal informasi detail sapertawis status server, sistem, sareung statistik Nexa.\n\n💡 *Cara Pemakéan Lanjutan*\nKanggo panduan lebih detail kumaha cara kerja suatu paréntah spesifik, anjeun tiasa anggo format:\n`/help <ngaran_paréntah>`\nContona: `/help play`\n\n🛠️ *Pusat Bantuan sareung Dukungan*\n`/report <detail_bug>` — Ngalaporkeun error, kendala, atawa bug nu anjeun panggih langsung ka owner.\n`/donate` — Masihan semangat sareung dukungan kanggo pengembangan project Nexa lewat donasi.\n`/about` — Nampilkeun informasi sapertawis latar belakang, versi rilis, sareng saha pembuat Project Nexa.",
+		"feature_guide": "📖 *Panduan Paréntah*\n\n💬 Ngaran Paréntah: `{name}`\n⚙️ Deskripsi: `{desc}`\n\n📝 Cara paké: `{example}`\n\n💡 Conto Penggunaan:\n`{example}`"
 	}
 }

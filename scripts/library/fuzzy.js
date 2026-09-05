@@ -1,37 +1,39 @@
-/**
- * command matcher
- * path : ./library/fuzzy.js
- */
 function getSimilarity(str1, str2) {
 	const a = str1.toLowerCase();
 	const b = str2.toLowerCase();
+
 	if (a === b) return 100;
 	if (a.length === 0 || b.length === 0) return 0;
-	const matrix = [];
-	for (let i = 0; i <= b.length; i++) matrix[i] = [i];
-	for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+
+	// using 2 array 1d
+	let prevRow = Array.from({ length: a.length + 1 }, (_, i) => i);
+	let currRow = new Array(a.length + 1);
+
 	for (let i = 1; i <= b.length; i++) {
+		currRow[0] = i;
 		for (let j = 1; j <= a.length; j++) {
-			if (b.charAt(i - 1) === a.charAt(j - 1)) {
-				matrix[i][j] = matrix[i - 1][j - 1];
-			} else {
-				matrix[i][j] = Math.min(
-					matrix[i - 1][j - 1] + 1, // substitution
-					matrix[i][j - 1] + 1, // insertion
-					matrix[i - 1][j] + 1 // deletion
-				);
-			}
+			const cost = b[i - 1] === a[j - 1] ? 0 : 1;
+			currRow[j] = Math.min(
+				currRow[j - 1] + 1, // insertion
+				prevRow[j] + 1, // deletion
+				prevRow[j - 1] + cost // substitution
+			);
 		}
+
+		[prevRow, currRow] = [currRow, prevRow];
 	}
-	const distance = matrix[b.length][a.length];
+
+	const distance = prevRow[a.length];
 	const maxLen = Math.max(a.length, b.length);
 	return Math.round(((maxLen - distance) / maxLen) * 100);
 }
 
 export function findDidYouMean(inputCmd, pluginsMap, threshold = 60) {
 	if (inputCmd.length < 2) return null;
+
 	let bestMatch = null;
 	let highestPercent = 0;
+	const inputLen = inputCmd.length;
 	for (const [_, plugin] of pluginsMap) {
 		let cmds = [];
 		if (Array.isArray(plugin.command)) {
@@ -41,7 +43,17 @@ export function findDidYouMean(inputCmd, pluginsMap, threshold = 60) {
 		} else if (plugin.help) {
 			cmds = plugin.help;
 		}
+
 		for (const cmd of cmds) {
+			const cmdLen = cmd.length;
+
+			// early exit
+			const maxPossiblePercent =
+				(Math.min(inputLen, cmdLen) / Math.max(inputLen, cmdLen)) * 100;
+			if (maxPossiblePercent < threshold && highestPercent < threshold) {
+				continue;
+			}
+
 			const percent = getSimilarity(inputCmd, cmd);
 			if (percent > highestPercent) {
 				highestPercent = percent;
@@ -49,10 +61,11 @@ export function findDidYouMean(inputCmd, pluginsMap, threshold = 60) {
 			}
 		}
 	}
+
 	if (highestPercent >= threshold) {
 		return {
-			cmdMean: bestMatch,
-			cmdPercent: `${highestPercent}%`,
+			command: bestMatch,
+			similarity: `${highestPercent}%`,
 		};
 	}
 

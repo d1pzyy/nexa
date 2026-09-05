@@ -1,12 +1,12 @@
 /**
  * Global Configuration
- * Author :: Kenzo <github.com/itsmekenzzx>
+ * Author :: d6. <github.com/d1pzyy>
  * License :: GPL V3.0
  */
 
 import pkg from '../package.json' with { type: 'json' };
 
-const name = 'Nexa';
+const name = 'Nexa™';
 
 Object.assign(global, {
 	botName: name,
@@ -14,7 +14,7 @@ Object.assign(global, {
 	footer: `Powered by ${name}`,
 	packname: 'Created by',
 	author: name,
-	prefix: ['.', '!', '/', '?'],
+	prefix: ['.', '!', '/', '#'],
 	owner: [['62812345678', 'd6.', true]],
 	socmed: {
 		github: 'https://github.com/d1pzyy',
@@ -24,7 +24,7 @@ Object.assign(global, {
 	},
 	channel: {
 		name: 'd6. [HQ]',
-		idch: '4d5', // hex
+		/* idch: '4d5', // hex */
 		link: 'https://whatsapp.com/channel/0029Vb8ad0iFXUueMu94mF0j',
 	},
 	settings: {
@@ -37,26 +37,35 @@ Object.assign(global, {
 			interval: 3,
 		},
 		antiBug: true,
+		antiVirtex: true,
+		botMode: 'public',
 		blockCall: true,
-		selfMode: false,
-		isMaintance: false,
+		maintenance: false,
 		presence: 'typing', // recording
+		maxWarning: 3,
 		group: {
 			antiLink: true,
-			autoWelcome: true,
-			autoLeave: true,
+			antiMedia: false,
+			antiTagStatus: true,
+			antiNsfw: true,
 			autoKick: {
 				kick: true,
 				interval: 3,
 			},
-			nsfwContent: false,
 		},
 	},
-
+	limit: {
+		default: 20,
+		premium: -1,
+		owner: -1,
+	},
 	media: {
-		thumb: {
-			image: '../source/media/img/thumb/*.png',
-			video: '../source/media/vid/thumb/*.mp4',
-		},
+		/* audio: '../source/media/audio/*.mp3', */
+		thumbImg: '../source/media/image/thumb/*.png',
+		/*
+    qrisImg: '../source/media/image/utils/qris.png',
+		paypalImg: '../source/media/image/utils/paypal.png',
+    */
+		defaultPfp: '../source/media/image/utils/default.png',
 	},
 });

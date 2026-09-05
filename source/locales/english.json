@@ -106,7 +106,7 @@
 		"disconnect": "🔴 Disconnected from `{network}`.",
 		"rate_limit": "⚠️ Too many attempts. Try again in {cd}.",
 		"timeout": "⏰ Request Timeout. Try again later.",
-		"delay": "🐌 Delay detected `{ping}ms.`",
+		"delay": "🐌 Delay detected `{ping}ms`",
 		"bandwidth": {
 			"usage": "📊 *BANDWIDTH USAGE*\n\nUsed: `{used} / {max}`\nRemaining: `{remaining}`",
 			"limit": "🚫 Data quota `{limit}` for this month has run out."
@@ -118,6 +118,9 @@
 		}
 	},
 	"other": {
-		"info": "*NEXA INFORMATION*\n\n🤖 Name: `{bot}`\n⚙️ Version: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Response: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Country: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`"
+		"info": "*NEXA INFORMATION*\n\n🤖 Name: `{bot}`\n⚙️ Version: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Response: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Country: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`",
+		"self_mode": "💤 Nexa is currently in *self* mode. All features, commands, and messages will not be responded to. Please try again later.",
+		"global_help": "📖 *Nexa User Guide*\n\nHere is a list of commands you can use to maximize your experience with Nexa.\n\n📝 *Basic Commands*\n`/register` — Register your profile for the first time to access all Nexa features.\n`/menu` — Display a complete list of all available menus, interactive features, and categories.\n`/help` — Open this help center page to guide your usage.\n`/ping` — Check response speed and ensure Nexa is online.\n`/status` — View detailed information regarding server status, systems, and Nexa statistics.\n\n💡 *Advanced Usage*\nTo get more detailed instructions on how a specific command works, you can use the following format:\n`/help <command_name>`\nUsage example: `/help play`\n\n🛠️ *Help and Support Center*\n`/report <bug_detail>` — Report errors, issues, or bugs you find directly to the owner.\n`/donate` — Show appreciation and support for the Nexa project development via donation.\n`/about` — Display information about the background, release version, and creators of the Nexa Project.",
+		"feature_guide": "📖 *Command Guide*\n\n💬 Command Name: `{name}`\n⚙️ Description: `{desc}`\n\n📝 How to Use: `{example}`\n\n💡 Usage Example:\n`{example}`"
 	}
 }

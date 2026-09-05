@@ -1,3 +1,4 @@
+/*
 import { join } from 'node:path';
 import { existsSync } from 'node:fs';
 import { logColor } from '#library/logger.js';
@@ -16,3 +17,4 @@ try {
 } catch (error) {
 	logColor.error(`Failed to setup environment: ${error.message}`);
 }
+*/

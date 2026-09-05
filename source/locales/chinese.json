@@ -13,5 +13,114 @@
 		"million": "百万",
 		"billion": "十亿",
 		"trillion": "万亿"
+	},
+	"times": {
+		"seconds": "秒",
+		"minutes": "分钟",
+		"hours": "小时",
+		"days": "天",
+		"months": "个月",
+		"years": "年",
+		"today": "今天",
+		"yesterday": "昨天",
+		"tomorrow": "明天"
+	},
+	"days": {
+		"sunday": "星期日",
+		"monday": "星期一",
+		"tuesday": "星期二",
+		"wednesday": "星期三",
+		"thursday": "星期四",
+		"friday": "星期五",
+		"saturday": "星期六"
+	},
+	"months": {
+		"january": "一月",
+		"february": "二月",
+		"march": "三月",
+		"april": "四月",
+		"may": "五月",
+		"june": "六月",
+		"july": "七月",
+		"august": "八月",
+		"september": "九月",
+		"october": "十月",
+		"november": "十一月",
+		"december": "十二月"
+	},
+	"greetings": {
+		"morning": "🌅 *早上好*",
+		"afternoon": "☀️ *下午好*",
+		"evening": "🌇 *傍晚好*",
+		"night": "🌃 *晚上好*",
+		"template": "{user}！\n\n很高兴认识你，我是 *{bot}*。随时随地准备满足你 *所有需求的助手！*\n\n> 📝 如果我的任何功能无法正常工作（错误、崩溃等），请毫不犹豫地直接向我的 Owner 报告，好吗？\n\n*祝你有美好的一天！* ✨"
+	},
+	"command": {
+		"example_usage": "⚠️ 使用方法不正确。这是一个例子：\n`{example}`",
+		"did_you_mean": "❓ 哎呀，找不到命令 `{input}`。你指的是这个吗？\n\n💬 命令: `{command}`\n📊 相似度: `{similarity}`",
+		"reply_number": "请使用有效的数字回复此消息。",
+		"unknown_input": "❌ 嗯，我找不到 `{input}`。请再检查一下你的输入。",
+		"invalid_number": "❌ `{input}` 是无效数字。"
+	},
+	"system": {
+		"loading": "⌛ _请稍等，正在处理..._",
+		"success": "✅ 在 `{times}` 内完成。",
+		"error": "❌ 哎呀，出了点问题。请稍后再试。",
+		"feature_maintenance": "🚧 此功能正在维护中。请稍后再试。",
+		"global_maintenance": "🚧 嘿 {user}，系统目前正在维护中。所有功能已暂时禁用。",
+		"owner_only": "👑 此功能仅供我的 *主人* 使用。",
+		"admin_only": "👮‍♂️ 只有 *群管理员* 才能使用此功能。",
+		"private_only": "👤 此功能仅限 *私聊* 使用。",
+		"premium_only": "🌟 此功能专为 *高级* 用户提供。",
+		"group_only": "👥 此功能只能在 *群组* 内使用。",
+		"unavailable_region": "🚫 此功能仅在特定地区可用。\n\n支持的地区: *{supported}*\n你当前的位置: *{region}*",
+		"user_afk": "💤 {user} 现已离开 (AFK)。原因: {reason}",
+		"tag_afk": "💤 请不要 @ {user}，他们正在离开 (AFK)。\n原因: {reason}\n时间: {times} 前。",
+		"back_afk": "💤 {user} 已回来。\n原因: {reason}\n时长: {times}。",
+		"invalid_url": "🔗 你的链接无效。请再次检查 URL。",
+		"cooldown": "⚠️ 嘿 {user}，请不要刷屏！等待 `{cd}` 后再试。",
+		"banned": "🚫 嘿 {user}，你因 *{reason}* 被封禁。所以你不能使用我的功能。",
+		"unregistered": "👋 嘿！我们还没见过面呢。\n\n请先输入 `{command}` 注册，我会为你解锁所有功能 ✨",
+		"registered": "✅ 注册成功！\n\n欢迎来到 *{bot}* 🎉\n输入 `{command}` 查看所有可用功能。"
+	},
+	"moderation": {
+		"bot_not_admin": "🤖 我无法执行此命令，因为我还不是 *群管理员*。",
+		"promote": "🚩 {who} 已将 {user} 设为群管理员。",
+		"demote": "🚩 {who} 已将 {user} 降级为成员。",
+		"desc_change": "🚩 群描述已由 {who} 更改\n\n{desc}",
+		"group_muted": "🔇 群组已被 {who} 禁言。",
+		"group_unmuted": "🔊 群组已由 {who} 解除禁言。"
+	},
+	"media": {
+		"size_limit": "📦 哎呀，此文件太大 ({size})。我的最大限制是 {limit}。",
+		"downloading": "📥 _正在下载媒体，请稍候..._",
+		"converting": "🔄 _正在处理媒体，请稍候..._"
+	},
+	"user": {
+		"limit_reached": "📉 哎呀，你已达到每日限制。请等到 `{reset}`，或者立即升级到 *高级版* 获得无限访问权限！",
+		"profile": "👤 *个人资料*\n\n• 姓名: {name}\n• 年龄: {age}\n• 状态: {status}\n• 限制: {limit}\n• 加入时间: {reg_dates}\n• SN: {sn_key}"
+	},
+	"networking": {
+		"connect": "🟢 已连接到 `{network}`。",
+		"reconnect": "🔄 _正在尝试重新连接到 {network}... (第 {attempt} 次尝试)_",
+		"disconnect": "🔴 已断开与 `{network}` 的连接。",
+		"rate_limit": "⚠️ 尝试次数过多。请在 {cd} 后重试。",
+		"timeout": "⏰ 请求超时。请稍后再试。",
+		"delay": "🐌 检测到延迟 `{ping}ms`",
+		"bandwidth": {
+			"usage": "📊 *带宽使用情况*\n\n已用: `{used} / {max}`\n剩余: `{remaining}`",
+			"limit": "🚫 本月的数据配额 `{limit}` 已用完。"
+		},
+		"latency": {
+			"high": "⚠️ 高延迟: `{latency}`",
+			"normal": "✅ 正常延迟: `{latency}`",
+			"low": "🔥 低延迟: `{latency}`"
+		}
+	},
+	"other": {
+		"info": "*NEXA 信息*\n\n🤖 名称: `{bot}`\n⚙️ 版本: `{version}`\n⏱️ 运行时间: `{uptime}`\n🚀 响应: `{respon}`\n\n🌐 服务器: `{server_name}`\n🏳️ 国家: `{country}`\n💻 系统: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 磁盘: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`",
+		"self_mode": "💤 Nexa 目前处于 *self* 模式。所有功能、指令和消息将不会得到回应。请稍后再试。",
+		"global_help": "📖 *Nexa 使用指南*\n\n以下是你可以使用的指令列表，以最大化你在 Nexa 上的体验。\n\n📝 *基础指令*\n`/register` — 首次注册你的个人资料以访问所有 Nexa 功能。\n`/menu` — 显示所有可用菜单、交互功能和分类的完整列表。\n`/help` — 打开此帮助中心页面以指导你的使用。\n`/ping` — 检查响应速度并确保 Nexa 在线。\n`/status` — 查看有关服务器状态、系统和 Nexa 统计数据的详细信息。\n\n💡 *高级用法*\n要获取有关特定指令工作原理的更多详细说明，你可以使用以下格式：\n`/help <command_name>`\n使用示例：`/help play`\n\n🛠️ *帮助与支持中心*\n`/report <bug_detail>` — 直接向主人报告你发现的错误、问题或 Bug。\n`/donate` — 通过捐赠对 Nexa 项目开发表示感谢和支持。\n`/about` — 显示有关 Nexa 项目的背景、发布版本和创作者的信息。",
+		"feature_guide": "📖 *指令指南*\n\n💬 指令名称: `{name}`\n⚙️ 描述: `{desc}`\n\n📝 如何使用: `{example}`\n\n💡 使用示例:\n`{example}`"
 	}
 }

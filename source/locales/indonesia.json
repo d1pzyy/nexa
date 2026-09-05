@@ -106,7 +106,7 @@
 		"disconnect": "🔴 Terputus dari `{network}`.",
 		"rate_limit": "⚠️ Terlalu banyak percobaan. Coba lagi dalam {cd}.",
 		"timeout": "⏰ Request Timeout. Coba lagi nanti.",
-		"delay": "🐌 Terdeteksi delay `{ping}ms.`",
+		"delay": "🐌 Terdeteksi delay `{ping}ms`",
 		"bandwidth": {
 			"usage": "📊 *PENGGUNAAN BANDWIDTH*\n\nTerpakai: `{used} / {max}`\nSisa: `{remaining}`",
 			"limit": "🚫 Kuota data `{limit}` bulan ini sudah habis."
@@ -118,6 +118,9 @@
 		}
 	},
 	"other": {
-		"info": "*INFORMASI NEXA*\n\n🤖 Nama: `{bot}`\n⚙️ Versi: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Negara: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`"
+		"info": "*INFORMASI NEXA*\n\n🤖 Nama: `{bot}`\n⚙️ Versi: `{version}`\n⏱️ Uptime: `{uptime}`\n🚀 Respon: `{respon}`\n\n🌐 Server: `{server_name}`\n🏳️ Negara: `{country}`\n💻 OS: `{os_name} ({arch})`\n⚡ CPU: `{cpu}`\n🧠 RAM: `{ram_used} / {ram_total}`\n💾 Disk: `{disk_used} / {disk_total}`\n🟢 Node.js: `{node_version}`",
+		"self_mode": "💤 Nexa sedang dalam mode *self*. Jadi semua fitur, command, dan pesan tidak akan direspon. Silakan coba lagi nanti ya.",
+		"global_help": "📖 *Panduan Penggunaan Nexa*\n\nBerikut adalah daftar perintah yang bisa kamu gunakan untuk memaksimalkan pengalamanmu bersama Nexa.\n\n📝 *Perintah Dasar*\n`/register` — Mendaftarkan profilmu untuk pertama kali agar bisa mengakses semua fitur Nexa.\n`/menu` — Menampilkan daftar lengkap semua menu, fitur interaktif, dan kategori yang tersedia.\n`/help` — Membuka halaman pusat bantuan ini untuk memandu penggunaan.\n`/ping` — Mengecek kecepatan respon dan memastikan Nexa sedang online.\n`/status` — Melihat informasi detail mengenai status server, sistem, dan statistik Nexa.\n\n💡 *Cara Penggunaan Lanjutan*\nUntuk mendapatkan panduan lebih detail mengenai cara kerja suatu perintah spesifik, kamu bisa menggunakan format berikut:\n`/help <nama_perintah>`\nContoh penggunaan: `/help play`\n\n🛠️ *Pusat Bantuan dan Dukungan*\n`/report <detail_bug>` — Melaporkan error, kendala, atau bug yang kamu temukan langsung ke owner.\n`/donate` — Memberikan apresiasi dan dukungan untuk pengembangan project Nexa via donasi.\n`/about` — Menampilkan informasi tentang latar belakang, versi rilis, dan pembuat Project Nexa.",
+		"feature_guide": "📖 *Panduan Perintah*\n\n💬 Nama Perintah: `{name}`\n⚙️ Deskripsi: `{desc}`\n\n📝 Cara Penggunaan: `{example}`\n\n💡 Contoh Penggunaan:\n`{example}`"
 	}
 }
